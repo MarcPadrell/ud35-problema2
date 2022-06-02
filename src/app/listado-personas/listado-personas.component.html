@@ -1,0 +1,34 @@
+<div class="container mx-auto mt-3">
+  <main>
+    <div class="row">
+      <div class="col-md col-lg">
+        <h4 class="mb-3" style="text-align: center;">Datos de la Persona</h4>
+        <hr>
+        <div class="row mx-auto">
+          <div class="col-sm-8 mx-auto mt-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Mensaje</th>
+                  <th>Respuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of array">
+                  <td>{{item[0]}}</td>
+                  <td>{{item[1]}}</td>
+                  <td>{{item[2]}}</td>
+                  <td>{{item[3]}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>
